@@ -7,8 +7,8 @@ spring:
     name: mail-send
   mail:
     host: smtp.exmail.qq.com
-    username: guohongquan@dhkjyxgs107.wecom.work
-    password: Mybirthday0625
+    username: your-username
+    password: your-password
     properties:
       mail.smtp.auth: true
       mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
@@ -17,15 +17,15 @@ spring:
 
   # 数据源配置
   datasource:
-    username: lovesay
-    password: lovesay13674861950!
+    username: your-username
+    password: your-password
     url: jdbc:mysql://localhost:3306/lovesay?useSSL=false&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
 # 邮件发送内容的信息
 recipient:
-  sendFromName: 每天都爱你的大河
+  sendFromName: your-sendFromName
 
 # 整合Mybatis
 mybatis:
