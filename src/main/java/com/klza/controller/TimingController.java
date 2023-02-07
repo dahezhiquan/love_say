@@ -33,7 +33,7 @@ public class TimingController {
         emailContent.setSubject(whatSayController.say().getSubject());
         emailContent.setText(whatSayController.say().getText());
         emailContent.setImgSrc(whatSayController.say().getImgSrc());
-        emailContent.setSendToEmail("1341791452@qq.com");
+        emailContent.setSendToEmail("your-girl-email");
         emailSend.sendEmailByMime(emailContent);
     }
 
@@ -45,7 +45,7 @@ public class TimingController {
         emailContent.setSubject(whatSayController.say().getSubject());
         emailContent.setText(whatSayController.say().getText());
         emailContent.setImgSrc(whatSayController.say().getImgSrc());
-        emailContent.setSendToEmail("3390205563@qq.com");
+        emailContent.setSendToEmail("your-email");
         emailSend.sendEmailByMime(emailContent);
     }
 }
