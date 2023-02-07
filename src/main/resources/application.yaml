@@ -1,0 +1,35 @@
+server:
+  port: 8088
+
+spring:
+  # 邮件分发配置
+  application:
+    name: mail-send
+  mail:
+    host: smtp.exmail.qq.com
+    username: guohongquan@dhkjyxgs107.wecom.work
+    password: Mybirthday0625
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+      mail.smtp.socketFactory.fallback: false
+      mail.smtp.socketFactory.port: 465
+
+  # 数据源配置
+  datasource:
+    username: lovesay
+    password: lovesay13674861950!
+    url: jdbc:mysql://localhost:3306/lovesay?useSSL=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+# 邮件发送内容的信息
+recipient:
+  sendFromName: 每天都爱你的大河
+
+# 整合Mybatis
+mybatis:
+  # 实体类别名
+  type-aliases-package: com.klza.pojo
+  # 映射文件路径
+  mapper-locations: classpath:/mybatis/mapper/*.xml
